@@ -1,14 +1,115 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Sailyw的博客</title>
-    <link>http://example.org/</link>
-    <description>Recent content on Sailyw的博客</description>
+    <title>sailyw的博客</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on sailyw的博客</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-Hans</language>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 20 Aug 2017 21:38:52 +0800</lastBuildDate>
     
-	<atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>About</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Sun, 20 Aug 2017 21:38:52 +0800</pubDate>
+      
+      <guid>http://localhost:1313/about/</guid>
+      
+        <description>&lt;p&gt;Hugo is a static site engine written in Go.&lt;/p&gt;
+&lt;p&gt;It makes use of a variety of open source projects including:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/spf13/cobra&#34;&gt;Cobra&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/spf13/viper&#34;&gt;Viper&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/spf13/jWalterWeatherman&#34;&gt;J Walter Weatherman&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/spf13/cast&#34;&gt;Cast&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Learn more and contribute on &lt;a href=&#34;https://github.com/gohugoio&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>使用hugo搭建个人博客</title>
+      <link>http://localhost:1313/post/%E4%BD%BF%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</link>
+      <pubDate>Mon, 20 Apr 2020 14:50:17 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/%E4%BD%BF%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</guid>
+      
+        <description>&lt;p&gt;1.首先到&lt;a href=&#34;https://github.com/gohugoio/hugo/releases&#34;&gt;Hugo releases 页面&lt;/a&gt;下载，由于我的电脑是 windows64 位,大家可以按需选择要下载的是 32 位还是 64 位。最好将解压后的 hugo.exe 放到 E:\software\hugo\hugo.exe 下，并且将 E:\software\hugo 加入到环境变量中，然后启动终端，运行&lt;code&gt;hugo version&lt;/code&gt;查看版本，是否安装成功。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;C:%5CUsers%5Clyw%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1587307603861.png&#34; alt=&#34;1587307603861&#34;&gt;&lt;/p&gt;
+&lt;p&gt;2.进入&lt;a href=&#34;https://gohugo.io/&#34;&gt;hugo 官网&lt;/a&gt;点击 get started，进入后，由于第一步安装已经完成了，从第二步开始走，选择一个安全的文件夹，在终端中执行下面代码。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;C:%5CUsers%5Clyw%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1587364554588.png&#34; alt=&#34;1587364554588&#34;&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-JavaScript&#34; data-lang=&#34;JavaScript&#34;&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;#&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;sailyw是我的github名称&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;，&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;名字为博客生成器&lt;/span&gt;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;hugo&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;site&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;sailyw&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;github&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;io&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;creator&lt;/span&gt;
+&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;#&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;add&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;a&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;theme&lt;/span&gt;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;cd&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;sailyw&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;github&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;io&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;creator&lt;/span&gt;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;git&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;init&lt;/span&gt;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;git&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;submodule&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;add&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;https&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;//github.com/budparr/gohugo-theme-ananke.git themes/ananke
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;theme = &amp;#34;ananke&amp;#34;&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;config&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;toml&lt;/span&gt;
+&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;#&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;开始第一篇文章编写&lt;/span&gt;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;hugo&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;posts&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;my&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;first&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;post&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;md&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;3.这时，我们的第一篇文章就已经创建了，存放在了 sailyw.github.io-creator\content\posts 中了，其中默认 draft:true 为草稿状态，当写完后文章后，应该 true 改成 flase，便不为草稿状态。&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-linux&#34; data-lang=&#34;linux&#34;&gt;---
+title: &amp;quot;My First Post&amp;quot;
+date: 2019-03-26T08:47:11+01:00
+draft: true
+---
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;4.在终端输入下列命令，会得到一个http://localhost:1313/网址，按CTRL键+鼠标就可以进行访问了。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;hugo server -D
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;img src=&#34;C:%5CUsers%5Clyw%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1587365866090.png&#34; alt=&#34;1587365866090&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;C:%5CUsers%5Clyw%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1587365998314.png&#34; alt=&#34;1587365998314&#34;&gt;&lt;/p&gt;
+&lt;p&gt;5.进行网站配置，进入 config.toml，修改标题&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;baseURL = &amp;quot;http://example.org/&amp;quot;
+languageCode = &amp;quot;zh-Hans&amp;quot;
+title = &amp;quot;Sailyw的博客&amp;quot;
+theme = &amp;quot;ananke&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;img src=&#34;C:%5CUsers%5Clyw%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1587366255729.png&#34; alt=&#34;1587366255729&#34;&gt;&lt;/p&gt;
+&lt;p&gt;6.建立静态页面,此时出现了 public 文件夹&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;hugo -D
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;7.挂载到 github 上，首先新建.gitignore，将&lt;code&gt;/public/&lt;/code&gt;写入其中，也就是当前仓库自成一个仓库。然后执行以下代码。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cd public
+git init
+git add .
+git commit -v
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;8.进入&lt;a href=&#34;https://github.com/&#34;&gt;github 官网&lt;/a&gt;，新建一个仓库，仓库名必须是你的 github 名.github.io，例如我自己的 sailyw.github.io，然后在终端 public 中输入&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;git remote add origin git@github.com:xxx/xxx.github.io.git
+git push -u origin master
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;9.接下来，我们可以点击该仓库的 settings 下的 GitHub Pages 下的地址访问到我们的博客挂在了 github 上，如果没有出现，可以看到下面有个 master 按钮，选中即可。然后点击下面的链接，便可看到之前的博客网站。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;C:%5CUsers%5Clyw%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1587367397745.png&#34; alt=&#34;1587367397745&#34;&gt;&lt;/p&gt;
+&lt;p&gt;10.如果不想使用系统默认的主题，可以在 step3 中，点击红框圈住的链接，接着点击 homepage，进入 public 上一级目录运行。本次博客使用的主题是&lt;a href=&#34;https://github.com/xianmin/hugo-theme-jane/blob/master/README-zh.md&#34;&gt;Jane&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;C:%5CUsers%5Clyw%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1587367613300.png&#34; alt=&#34;1587367613300&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;C:%5CUsers%5Clyw%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1587367821469.png&#34; alt=&#34;1587367821469&#34;&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;git clone https://github.com/xianmin/hugo-theme-jane.git --depth=1 themes/jane
+cp -r themes/jane/exampleSite/content ./
+cp themes/jane/exampleSite/config.toml ./
+hugo server
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;11.配置&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;进行汉化&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;C:%5CUsers%5Clyw%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1587369232070.png&#34; alt=&#34;1587369232070&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;改变作者名&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;C:%5CUsers%5Clyw%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1587369684162.png&#34; alt=&#34;1587369684162&#34;&gt;&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>This is a very long title This is a very long title This is a very long title This is a very long title This is a very long title</title>
+      <link>http://localhost:1313/post/this-is-a-very-long-title/</link>
+      <pubDate>Wed, 30 Aug 2017 15:43:48 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/this-is-a-very-long-title/</guid>
+      
+        <description>&lt;p&gt;This is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long title&lt;/p&gt;
+</description>
+      
+    </item>
     
   </channel>
 </rss>
