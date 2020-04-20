@@ -69,7 +69,7 @@
 <meta itemprop="description" content="1.首先到Hugo releases 页面下载，由于我的电脑是 windows64 位,大家可以按需选择要下载的是 32 位还是 64 位。最好将解压后的 hugo.exe 放到 E:\software\hugo\hugo.exe 下，并且将 E:\software\hugo 加入到环境变量中">
 <meta itemprop="datePublished" content="2020-04-20T14:50:17&#43;08:00" />
 <meta itemprop="dateModified" content="2020-04-20T14:50:17&#43;08:00" />
-<meta itemprop="wordCount" content="789">
+<meta itemprop="wordCount" content="833">
 
 
 
@@ -366,34 +366,34 @@
     
     <div class="post-content">
       <p>1.首先到<a href="https://github.com/gohugoio/hugo/releases">Hugo releases 页面</a>下载，由于我的电脑是 windows64 位,大家可以按需选择要下载的是 32 位还是 64 位。最好将解压后的 hugo.exe 放到 E:\software\hugo\hugo.exe 下，并且将 E:\software\hugo 加入到环境变量中，然后启动终端，运行<code>hugo version</code>查看版本，是否安装成功。</p>
-<p><img src="C:%5CUsers%5Clyw%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1587307603861.png" alt="1587307603861"></p>
+<p><img src="/imgs/%E4%BD%BF%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/download.png" alt=""></p>
 <p>2.进入<a href="https://gohugo.io/">hugo 官网</a>点击 get started，进入后，由于第一步安装已经完成了，从第二步开始走，选择一个安全的文件夹，在终端中执行下面代码。</p>
-<p><img src="C:%5CUsers%5Clyw%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1587364554588.png" alt="1587364554588"></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#960050;background-color:#1e0010">#</span> <span style="color:#a6e22e">sailyw是我的github名称</span><span style="color:#960050;background-color:#1e0010">，</span><span style="color:#a6e22e">名字为博客生成器</span>
-<span style="color:#a6e22e">hugo</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">site</span> <span style="color:#a6e22e">sailyw</span>.<span style="color:#a6e22e">github</span>.<span style="color:#a6e22e">io</span><span style="color:#f92672">-</span><span style="color:#a6e22e">creator</span>
-<span style="color:#960050;background-color:#1e0010">#</span> <span style="color:#a6e22e">add</span> <span style="color:#a6e22e">a</span> <span style="color:#a6e22e">theme</span>
-<span style="color:#a6e22e">cd</span> <span style="color:#a6e22e">sailyw</span>.<span style="color:#a6e22e">github</span>.<span style="color:#a6e22e">io</span><span style="color:#f92672">-</span><span style="color:#a6e22e">creator</span>
-<span style="color:#a6e22e">git</span> <span style="color:#a6e22e">init</span>
-<span style="color:#a6e22e">git</span> <span style="color:#a6e22e">submodule</span> <span style="color:#a6e22e">add</span> <span style="color:#a6e22e">https</span><span style="color:#f92672">:</span><span style="color:#75715e">//github.com/budparr/gohugo-theme-ananke.git themes/ananke
-</span><span style="color:#75715e"></span><span style="color:#a6e22e">echo</span> <span style="color:#e6db74">&#39;theme = &#34;ananke&#34;&#39;</span> <span style="color:#f92672">&gt;&gt;</span> <span style="color:#a6e22e">config</span>.<span style="color:#a6e22e">toml</span>
-<span style="color:#960050;background-color:#1e0010">#</span> <span style="color:#a6e22e">开始第一篇文章编写</span>
-<span style="color:#a6e22e">hugo</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">posts</span><span style="color:#f92672">/</span><span style="color:#a6e22e">my</span><span style="color:#f92672">-</span><span style="color:#a6e22e">first</span><span style="color:#f92672">-</span><span style="color:#a6e22e">post</span>.<span style="color:#a6e22e">md</span>
-</code></pre></div><p>3.这时，我们的第一篇文章就已经创建了，存放在了 sailyw.github.io-creator\content\posts 中了，其中默认 draft:true 为草稿状态，当写完后文章后，应该 true 改成 flase，便不为草稿状态。</p>
-<pre><code class="language-linux" data-lang="linux">---
+<p><img src="/imgs/%E4%BD%BF%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/getStarted.png" alt=""></p>
+<pre><code># sailyw是我的github名称，名字为博客生成器
+hugo new site sailyw.github.io-creator
+# add a theme
+cd sailyw.github.io-creator
+git init
+git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke
+echo 'theme = &quot;ananke&quot;' &gt;&gt; config.toml
+# 开始第一篇文章编写
+hugo new posts/my-first-post.md
+</code></pre><p>3.这时，我们的第一篇文章就已经创建了，存放在了 sailyw.github.io-creator\content\posts 中了，其中默认 draft:true 为草稿状态，当写完后文章后，应该 true 改成 flase，便不为草稿状态。</p>
+<pre><code>---
 title: &quot;My First Post&quot;
 date: 2019-03-26T08:47:11+01:00
 draft: true
 ---
 </code></pre><p>4.在终端输入下列命令，会得到一个http://localhost:1313/网址，按CTRL键+鼠标就可以进行访问了。</p>
 <pre><code>hugo server -D
-</code></pre><p><img src="C:%5CUsers%5Clyw%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1587365866090.png" alt="1587365866090"></p>
-<p><img src="C:%5CUsers%5Clyw%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1587365998314.png" alt="1587365998314"></p>
+</code></pre><p><img src="/imgs/%E4%BD%BF%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/localhost1313.png" alt=""></p>
+<p><img src="/imgs/%E4%BD%BF%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/myNewBlog.png" alt=""></p>
 <p>5.进行网站配置，进入 config.toml，修改标题</p>
 <pre><code>baseURL = &quot;http://example.org/&quot;
 languageCode = &quot;zh-Hans&quot;
 title = &quot;Sailyw的博客&quot;
 theme = &quot;ananke&quot;
-</code></pre><p><img src="C:%5CUsers%5Clyw%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1587366255729.png" alt="1587366255729"></p>
+</code></pre><p><img src="/imgs/%E4%BD%BF%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/settings.png" alt=""></p>
 <p>6.建立静态页面,此时出现了 public 文件夹</p>
 <pre><code>hugo -D
 </code></pre><p>7.挂载到 github 上，首先新建.gitignore，将<code>/public/</code>写入其中，也就是当前仓库自成一个仓库。然后执行以下代码。</p>
@@ -405,10 +405,10 @@ git commit -v
 <pre><code>git remote add origin git@github.com:xxx/xxx.github.io.git
 git push -u origin master
 </code></pre><p>9.接下来，我们可以点击该仓库的 settings 下的 GitHub Pages 下的地址访问到我们的博客挂在了 github 上，如果没有出现，可以看到下面有个 master 按钮，选中即可。然后点击下面的链接，便可看到之前的博客网站。</p>
-<p><img src="C:%5CUsers%5Clyw%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1587367397745.png" alt="1587367397745"></p>
+<p><img src="/imgs/%E4%BD%BF%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/gitpages.png" alt=""></p>
 <p>10.如果不想使用系统默认的主题，可以在 step3 中，点击红框圈住的链接，接着点击 homepage，进入 public 上一级目录运行。本次博客使用的主题是<a href="https://github.com/xianmin/hugo-theme-jane/blob/master/README-zh.md">Jane</a></p>
-<p><img src="C:%5CUsers%5Clyw%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1587367613300.png" alt="1587367613300"></p>
-<p><img src="C:%5CUsers%5Clyw%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1587367821469.png" alt="1587367821469"></p>
+<p><img src="/imgs/%E4%BD%BF%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/addATheme.png" alt=""></p>
+<p><img src="/imgs/%E4%BD%BF%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/homepage.png" alt=""></p>
 <pre><code>git clone https://github.com/xianmin/hugo-theme-jane.git --depth=1 themes/jane
 cp -r themes/jane/exampleSite/content ./
 cp themes/jane/exampleSite/config.toml ./
@@ -417,12 +417,20 @@ hugo server
 <ul>
 <li>进行汉化</li>
 </ul>
-<p><img src="C:%5CUsers%5Clyw%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1587369232070.png" alt="1587369232070"></p>
-<ul>
+<pre><code># language support # en / zh-cn / other... translations present in i18n/
+defaultContentLanguage = &quot;zh-cn&quot;           # Default language to use
+[languages.zh-cn]
+  languageCode = &quot;zh-cn&quot;
+</code></pre><ul>
 <li>改变作者名</li>
 </ul>
-<p><img src="C:%5CUsers%5Clyw%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1587369684162.png" alt="1587369684162"></p>
-
+<pre><code>[author]                  # essential                     # 必需
+  name = &quot;sailyw&quot;
+</code></pre><p>12.上传</p>
+<pre><code>hugo
+cd public
+git push
+</code></pre>
     </div>
 
     
